@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sirsa Tuladhar | Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    :root {
+      --primary-purple: #6a4cff;
+      --light-purple: #f3efff;
+      --dark-text: #111;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--light-purple);
+      color: var(--dark-text);
+    }
+
+    /* NAVBAR */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #fff;
+      padding: 15px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      z-index: 1000;
+    }
+
+    header h2 {
+      color: var(--primary-purple);
+      font-size: 1.4rem;
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--primary-purple);
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 120px 10%;
+      background: linear-gradient(135deg, #6a4cff, #8f7bff);
+      color: #fff;
+      position: relative;
+    }
+
+    .hero-text {
+      max-width: 55%;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .hero-image img {
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid #fff;
+    }
+
+    .scroll-down {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .scroll-down a {
+      width: 50px;
+      height: 50px;
+      background: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary-purple);
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%,20%,50%,80%,100% { transform: translateY(0); }
+      40% { transform: translateY(-10px); }
+      60% { transform: translateY(-5px); }
+    }
+
+    section {
+      padding: 80px 10%;
+      background: #fff;
+    }
+
+    section:nth-child(even) {
+      background: var(--light-purple);
+    }
+
+    h2 {
+      color: var(--primary-purple);
+      margin-bottom: 40px;
+      font-size: 2rem;
+    }
+
+    footer {
+      background: var(--primary-purple);
+      color: #fff;
+      text-align: center;
+      padding: 50px 10%;
+    }
+
+    .socials a {
+      background: #fff;
+      color: var(--primary-purple);
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin: 0 8px;
+      text-decoration: none;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+      .hero-text {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<header>
+  <h2>Sirsa</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="hobbies.html">Hobbies</a>
+    <a href="goals-2026.html">Goals 2026</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-text">
+    <h1>Hello, I’m Sirsa Tuladhar</h1>
+    <p>
+      Marketing and Content Executive with over 8 years of experience in digital marketing,
+      content strategy, and campaign execution. I help brands connect with audiences through
+      meaningful stories and measurable strategy.
+    </p>
+  </div>
+
+  <div class="hero-image">
+    <img src="your-photo.jpg" alt="Sirsa Tuladhar">
+  </div>
+
+  <div class="scroll-down">
+    <a href="#skills"><i class="fas fa-arrow-down"></i></a>
+  </div>
+</div>
+
+<!-- PLACEHOLDER FOR YOUR EXISTING SECTIONS -->
+<section id="skills">
+  <h2>Skillset</h2>
+  <p>(Your existing skills grid remains here exactly as before)</p>
+</section>
+
+<footer id="contact">
+  <p>📍 Kathmandu, Nepal | ✉️ sirsatuladhar@gmail.com | ☎️ 9860931918</p>
+  <div class="socials">
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-x-twitter"></i></a>
+  </div>
+</footer>
+
+</body>
+</html>
